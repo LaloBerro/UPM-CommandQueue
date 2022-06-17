@@ -1,0 +1,28 @@
+{
+  "name": "com..",
+  "version": "1.0.0",
+  "displayName": "",
+  "description": "",
+  "unity": "2020.3",
+  "unityRelease": "0b5",
+  "documentationUrl": "",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "keywords": [
+  ],
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "type": "tool",
+  "hideInEditor": false,
+  "samples": 
+[
+	{
+		"displayName": "Samples",
+		"description": "",
+		"path": "Samples~/"
+	}
+]
+}
