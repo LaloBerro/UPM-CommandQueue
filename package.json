@@ -1,7 +1,7 @@
 {
-  "name": "com..",
+  "name": "com.tgl.commandqueue",
   "version": "1.0.0",
-  "displayName": "",
+  "displayName": "TGL - CommandQueue",
   "description": "",
   "unity": "2020.3",
   "unityRelease": "0b5",
@@ -11,18 +11,10 @@
   "keywords": [
   ],
   "author": {
-    "name": "",
+    "name": "TGL",
     "email": "",
     "url": ""
   },
   "type": "tool",
   "hideInEditor": false,
-  "samples": 
-[
-	{
-		"displayName": "Samples",
-		"description": "",
-		"path": "Samples~/"
-	}
-]
 }
