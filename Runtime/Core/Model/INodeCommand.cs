@@ -1,3 +1,5 @@
+using Commands.Core;
+
 namespace CommandQueues.Core
 {
     public interface INodeCommand : ICommand
