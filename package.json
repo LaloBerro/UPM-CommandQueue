@@ -8,13 +8,12 @@
   "documentationUrl": "",
   "changelogUrl": "",
   "licensesUrl": "",
-  "keywords": [
-  ],
+  "keywords": [],
   "author": {
     "name": "TGL",
     "email": "",
     "url": ""
   },
   "type": "tool",
-  "hideInEditor": false,
+  "hideInEditor": false
 }
