@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace CommandQueues.Core
@@ -7,12 +8,15 @@ namespace CommandQueues.Core
         private readonly Queue<INodeCommand> _nodeCommands;
         private ICommandQueue _commandQueue;
 
+        public Action OnExecutionDone { get; set; }
+
         public CommandQueue(INodeCommand[] nodeCommands)
         {
             _nodeCommands = new Queue<INodeCommand>();
 
             foreach (var nodeCommander in nodeCommands)
             {
+                nodeCommander.SetCommandQueue(this);
                 _nodeCommands.Enqueue(nodeCommander);
             }
         }
@@ -25,7 +29,7 @@ namespace CommandQueues.Core
         public void RunNextCommand()
         {
             INodeCommand nodeCommand = _nodeCommands.Dequeue();
-            nodeCommand.Execute();
+            nodeCommand?.Execute();
         }
 
         public void NotifyCommandDone()
@@ -41,6 +45,7 @@ namespace CommandQueues.Core
 
         private void ExecutionIsDone()
         {
+            OnExecutionDone?.Invoke();
             _commandQueue?.NotifyCommandDone();
         }
 
