@@ -23,6 +23,12 @@ namespace CommandQueues.Core
 
         public void Execute()
         {
+            if (_nodeCommands.Count <= 0)
+            {
+                ExecutionIsDone();
+                return;
+            }
+
             RunNextCommand();
         }
 

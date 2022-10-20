@@ -1,6 +1,6 @@
 {
   "name": "com.tgl.commandqueue",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "displayName": "TGL - CommandQueue",
   "unity": "2020.3",
   "unityRelease": "0b5",
