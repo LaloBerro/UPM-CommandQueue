@@ -1,5 +1,5 @@
 {
-    "name": "Runtime.TGL.CommandQueue",
+    "name": "Runtime.CommandQueue",
     "rootNamespace": "",
     "references": [
         "GUID:d567d02b6f7dfcc47a3341f2bbfe34ef",
