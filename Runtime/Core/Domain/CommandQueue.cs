@@ -13,7 +13,10 @@ namespace CommandQueues.Core
         public CommandQueue(INodeCommand[] nodeCommands)
         {
             _nodeCommands = new Queue<INodeCommand>();
-
+            
+            if(ReferenceEquals(nodeCommands, null))
+                return;
+            
             foreach (var nodeCommander in nodeCommands)
             {
                 nodeCommander.SetCommandQueue(this);

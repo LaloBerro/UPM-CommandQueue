@@ -1,6 +1,6 @@
 {
   "name": "com.lalo.commandqueue",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "displayName": "CommandQueue",
   "unity": "2020.3",
   "unityRelease": "0b5",
